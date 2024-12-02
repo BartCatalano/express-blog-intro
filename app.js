@@ -20,10 +20,6 @@ app.get("/bacheca",(req, res) =>{
     }
     res.json(data);
 });
-// provo rotta debug
-app.get("/debug",(req, res) =>{
-    res.send("prova debug")
-});
 
 // creo rotta di apertura server
 app.listen(port,() =>{
