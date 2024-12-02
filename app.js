@@ -3,7 +3,7 @@ const express = require(`express`);
 const app = express();
 const port = 3001;
 // importo js con lista 
- const bacheca = require("./content");
+ const bacheca = require("./data");
 
 // creo assets pubblico per le immagini
 app.use(express.static("images"));
