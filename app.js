@@ -2,6 +2,12 @@
 const express = require(`express`);
 const app = express();
 const port = 3001;
+// importo js con lista 
+ const bacheca = require("./content");
+
+// creo assets pubblico per le immagini
+app.use(express.static("images"));
+
 // creo rotta base 
 app.get("/", (req, res) => {
     res.send("Server del mio blog");
@@ -18,5 +24,6 @@ app.get(`/bacheca`,(req, res) =>{
 
 // creo rotta di apertura server
 app.listen(port,() =>{
+console.log("Server pronto!");
 
 });

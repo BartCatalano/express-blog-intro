@@ -1,4 +1,4 @@
-const list = [
+const bacheca = [
    {
      titolo : "Ciambellone",
      contenuto : "contenuto",
@@ -30,3 +30,5 @@ const list = [
         tags : "tags",
        },
 ];
+
+module.exports = bacheca;
